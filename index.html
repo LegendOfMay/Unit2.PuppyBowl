@@ -11,20 +11,37 @@
       <img src="./image/home-logo.png" alt="Dog logo">
       <h1>Puppy Bowl 🏁 </h1>
     </header>
+    <aside id="addPlayerForm">
+      
+      <h2>Add Your Player!</h2>
+      
+      <form id="playerForm">
+          <label for="name">Contestant Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="imageUrl">Image URL:</label>
+          <input type="text" id="imageUrl" name="imageUrl">
+
+          <label for="status">Status:</label>
+          <input type="text" id="status" name="status" required>
+
+          <label for="breed">Breed:</label>
+          <input type="text" id="breed" name="breed" required>
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required>
+
+          <button type="submit">Add Player</button>
+      </form>
+  </aside>
     
     <main>
       <h1>Contestants</h1>
-      <section id="playerContainer">
-        
-      </section>
-      <!-- <aside>
-        <h2>Add Player</h2>
-        <form>
-          <input type="text" id="name" name="name">
-          <label>Contestant Name</label>
-        </form>
-      </aside> -->
+      <section id="playerContainer"></section>
+      
     </main>
-
+    <div id="playerDetailsModal" style="display: none;"></div>
+    
+    
   </body>
 </html>

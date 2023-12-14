@@ -2,6 +2,7 @@ body {
   background-color: darkseagreen; 
 }
 
+/* HEADER  */
 header {
   text-align: center;
   font-family: sans-serif;
@@ -12,6 +13,8 @@ header {
 h1 {
   text-align: center;
 }
+
+/* HOME PAGE PLAYER LIST + BUTTON */
 
 #playerContainer {
   display: flex;
@@ -52,4 +55,86 @@ button {
 
 button:hover {
   background-color: #7c0707;
+}
+
+/* SINGLE PLAYER DETAILS CSS  */
+
+#playerDetailsModal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: none;
+}
+
+#playerDetailsModal img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#playerDetailsModal h2 {
+  margin-bottom: 10px;
+}
+
+#playerDetailsModal p {
+  margin-bottom: 8px;
+}
+
+#playerDetailsModal button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#playerDetailsModal button:hover {
+  background-color: #45a049;
+}
+
+/* ADD PLAYER FORM CSS */
+
+#addPlayerForm {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#addPlayerForm h2 {
+  margin-bottom: 10px;
+}
+
+#playerForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#playerForm input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#playerForm button {
+  background-color: red;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#playerForm button:hover {
+  background-color: #45a049;
 }
